@@ -1,0 +1,36 @@
+{
+  "name": "eth-deposit-tracker",
+  "version": "1.0.0",
+  "description": "A powerful and efficient tool for tracking and recording Ethereum (ETH) deposits to the Beacon Deposit Contract.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx --watch src/index.ts",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an1ket-s1ngh/luganodes-task.git"
+  },
+  "keywords": [
+    "ethereum",
+    "deposit",
+    "tracker"
+  ],
+  "author": "Aniket Singh",
+  "devDependencies": {
+    "drizzle-kit": "^0.23.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.10",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.32.0",
+    "ethers": "^6.13.1",
+    "postgres": "^3.4.4"
+  }
+}
